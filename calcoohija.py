@@ -25,7 +25,6 @@ if __name__ == "__main__":
         operando2 = int(sys.argv[3])
     except ValueError:
         sys.exit("Error: Non numerical parameters")
-        
-    operador = sys.argv[2]     
-    result = operadorDict[operador](operando1, operando2)
+       
+    result = operadorDict[sys.argv[2]](operando1, operando2)
     print(result)
