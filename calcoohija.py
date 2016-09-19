@@ -24,16 +24,11 @@ if __name__ == "__main__":
         operando2 = int(sys.argv[3])
     except ValueError:
         sys.exit("Error: Non numerical parameters")
+        
+    operador = sys.argv[2]
 
-    if sys.argv[2] == "suma":
-        result = calculadora.plus(operando1, operando2)
-    elif sys.argv[2] == "resta":
-        result = calculadora.minus(operando1, operando2)
-    elif sys.argv[2] == "multiplica":
-        result = calculadora.mult (operando1, operando2)
-    elif sys.argv[2] == "divide":
-        result = calculadora.div (operando1, operando2)
-    else:
-        sys.exit('Operación sólo puede ser sumar, restar, multiplicar  o dividir.')
-
+    operadorDict = {'suma': calculadora.plus, 'resta': calculadora.minus,
+     'multiplica': calculadora.mult, 'divide': calculadora.div}
+     
+    result = operadorDict[operador](operando1, operando2)
     print(result)
