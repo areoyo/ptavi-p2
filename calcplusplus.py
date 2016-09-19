@@ -11,8 +11,8 @@ if __name__ == "__main__":
     operadorDict = {'suma': calculadora.plus, 'resta': calculadora.minus,
              'multiplica': calculadora.mult, 'divide': calculadora.div}
     
-    with open(sys.argv[1], newline='') as f:
-        lineas = csv.reader(f)        
+    with open(sys.argv[1], newline='') as datos:
+        lineas = csv.reader(datos)        
         for elemento in lineas:
         
             operando1 = int(elemento[1])
