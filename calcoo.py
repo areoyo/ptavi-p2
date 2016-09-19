@@ -3,12 +3,12 @@
 
 import sys
 
-class Calculadora ():
-    def plus (self, op1, op2):
+class Calculadora():
+    def plus(self, op1, op2):
         """ Function to sum the operands """
         return op1 + op2
         
-    def minus (self, op1, op2):
+    def minus(self, op1, op2):
         """ Function to substract the operands """
         return op1 - op2
 

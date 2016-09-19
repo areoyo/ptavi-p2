@@ -21,5 +21,5 @@ if __name__ == "__main__":
             
             for numero in elemento[3:]:
                 result = operadorDict[elemento[0]](result, int(numero))
-
+                
             print (result)

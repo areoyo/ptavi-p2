@@ -4,14 +4,14 @@
 import sys
 import calcoo
                 
-class CalculadoraHija (calcoo.Calculadora):
-    def div (self, op1, op2):
+class CalculadoraHija(calcoo.Calculadora):
+    def div(self, op1, op2):
         try:
             return op1 / op2
         except ZeroDivisionError:
             sys.exit("Error: Division by zero is not allowed")
     
-    def mult (self, op1, op2):
+    def mult(self, op1, op2):
         return op1 * op2
 
 if __name__ == "__main__":
