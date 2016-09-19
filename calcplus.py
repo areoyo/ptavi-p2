@@ -14,7 +14,7 @@ if __name__ == "__main__":
          'multiplica': calculadora.mult, 'divide': calculadora.div}
     
     for line in lineas:
-        elementos = line[:-1].split(',') #LISTA: TROCEA POR EL CARACTER QUE LE INDICAMOS
+        elementos = line[:-1].split(',')
         
         operando1 = int(elementos[1])
         operando2 = int(elementos[2])
