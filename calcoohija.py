@@ -3,8 +3,7 @@
 
 import sys
 import calcoo
-        
-        
+                
 class CalculadoraHija (calcoo.Calculadora):
     def div (self, op1, op2):
         try:
@@ -18,6 +17,8 @@ class CalculadoraHija (calcoo.Calculadora):
 if __name__ == "__main__":
 
     calculadora = CalculadoraHija()
+    operadorDict = {'suma': calculadora.plus, 'resta': calculadora.minus,
+     'multiplica': calculadora.mult, 'divide': calculadora.div}
     
     try:
         operando1 = int(sys.argv[1])
@@ -25,10 +26,6 @@ if __name__ == "__main__":
     except ValueError:
         sys.exit("Error: Non numerical parameters")
         
-    operador = sys.argv[2]
-
-    operadorDict = {'suma': calculadora.plus, 'resta': calculadora.minus,
-     'multiplica': calculadora.mult, 'divide': calculadora.div}
-     
+    operador = sys.argv[2]     
     result = operadorDict[operador](operando1, operando2)
     print(result)
