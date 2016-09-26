@@ -9,7 +9,7 @@ import calcoohija
 if __name__ == "__main__":
 
     calculadora = calcoohija.CalculadoraHija()
-    operadorDict = {'suma': plus, 'resta': minus, 'multiplica': mult, 
+    operadorDict = {'suma': plus, 'resta': minus, 'multiplica': mult,
                     'divide': div}
 
     with open(sys.argv[1], newline='') as datos:
