@@ -7,13 +7,13 @@ import sys
 def plus(op1, op2):
     """ Function to sum the operands """
     return op1 + op2
-    
+
 
 def minus(op1, op2):
     """ Function to substract the operands """
     return op1 - op2
 
-    
+
 def div(op1, op2):
     try:
         return op1 / op2
