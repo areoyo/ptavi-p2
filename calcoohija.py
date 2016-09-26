@@ -1,8 +1,9 @@
-#!/usr/bin/python3
+#!/usr/bin/python3s
 # -*- coding: utf-8 -*-
 
 import sys
 import calcoo
+
 
 class CalculadoraHija(calcoo.Calculadora):
     def div(self, op1, op2):

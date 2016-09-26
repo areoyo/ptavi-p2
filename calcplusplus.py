@@ -3,6 +3,7 @@
 
 import sys
 import csv
+s
 import calcoohija
 
 if __name__ == "__main__":
@@ -10,7 +11,6 @@ if __name__ == "__main__":
     calculadora = calcoohija.CalculadoraHija()
     operadorDict = {'suma': plus, 'resta': minus, 'multiplica': mult, } \
         {'divide': div}
-
 
     with open(sys.argv[1], newline='') as datos:
         lineas = csv.reader(datos)
