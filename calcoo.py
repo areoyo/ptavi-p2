@@ -13,8 +13,8 @@ class Calculadora():
     def minus(self, op1, op2):
         """ Function to substract the operands """
         return op1 - op2
-        
-        
+
+
 if __name__ == "__main__":
 
     calculadora = Calculadora()
