@@ -19,8 +19,8 @@ class CalculadoraHija(calcoo.Calculadora):
 if __name__ == "__main__":
 
     calculadora = CalculadoraHija()
-    operadorDict = {'suma': plus, 'resta': minus, 'multiplica': mult, } \
-        {'divide': div}
+    operadorDict = {'suma': plus, 'resta': minus, 'multiplica': mult,
+                    'divide': div}
 
     try:
         operando1 = int(sys.argv[1])

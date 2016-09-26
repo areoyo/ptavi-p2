@@ -11,8 +11,8 @@ lineas = fich.readlines()
 if __name__ == "__main__":
 
     calculadora = calcoohija.CalculadoraHija()
-    operadorDict = {'suma': plus, 'resta': minus, 'multiplica': mult, } \
-        {'divide': div}
+    operadorDict = {'suma': plus, 'resta': minus, 'multiplica': mult,
+                    'divide': div}
 
     for line in lineas:
         elementos = line[:-1].split(',')
