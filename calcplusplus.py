@@ -3,8 +3,8 @@
 
 import sys
 import csv
-s
 import calcoohija
+
 
 if __name__ == "__main__":
 
