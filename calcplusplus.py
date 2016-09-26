@@ -8,8 +8,9 @@ import calcoohija
 if __name__ == "__main__":
 
     calculadora = calcoohija.CalculadoraHija()
-    operadorDict = {'suma': calculadora.plus, 'resta': calculadora.minus,   \
-        'multiplica': calculadora.mult, 'divide': calculadora.div}
+    operadorDict = {'suma': plus, 'resta': minus, 'multiplica': mult, } \
+        {'divide': div}
+
 
     with open(sys.argv[1], newline='') as datos:
         lineas = csv.reader(datos)

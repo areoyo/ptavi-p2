@@ -4,7 +4,6 @@
 import sys
 import calcoo
 
-
 class CalculadoraHija(calcoo.Calculadora):
     def div(self, op1, op2):
         try:
@@ -19,8 +18,8 @@ class CalculadoraHija(calcoo.Calculadora):
 if __name__ == "__main__":
 
     calculadora = CalculadoraHija()
-    operadorDict = {'suma': calculadora.plus, 'resta': calculadora.minus,   \
-        'multiplica': calculadora.mult, 'divide': calculadora.div}
+    operadorDict = {'suma': plus, 'resta': minus, 'multiplica': mult, } \
+        {'divide': div}
 
     try:
         operando1 = int(sys.argv[1])
