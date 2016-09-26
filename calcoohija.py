@@ -12,7 +12,6 @@ class CalculadoraHija(calcoo.Calculadora):
         except ZeroDivisionError:
             sys.exit("Error: Division by zero is not allowed")
 
-
     def mult(self, op1, op2):
         return op1 * op2
 

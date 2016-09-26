@@ -9,7 +9,6 @@ class Calculadora():
         """ Function to sum the operands """
         return op1 + op2
 
-
     def minus(self, op1, op2):
         """ Function to substract the operands """
         return op1 - op2
